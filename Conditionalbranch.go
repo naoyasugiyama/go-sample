@@ -104,10 +104,38 @@ func getOs() {
 	fmt.Println(os)
 }
 
+// stack defer
+// LIFO
+func stackTest() {
+	fmt.Println("stack Test")
+
+	for i := 0; i < 10; i++ {
+		defer fmt.Println(i)
+	}
+
+	fmt.Println("done")
+}
+
+func deferTest() int {
+	fmt.Println("--------------------------")
+	defer fmt.Println("defere call") // return の直前にはいる
+	x := 10
+
+	fmt.Println("done")
+	return x
+}
+
 //
 func main() {
 	//	sample01()
 	//	sample02()
 	sample03()
 	getOs()
+
+	fmt.Println(deferTest())
+
+	fmt.Println("--------------------------")
+
+	stackTest()
+
 }
