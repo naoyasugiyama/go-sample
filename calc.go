@@ -149,6 +149,8 @@ func sample03() {
 
 //送受信演算子
 func sample04() {
+	fmt.Println("送受信演算子説明")
+
 	/*
 		chan T
 		chan<- float64
