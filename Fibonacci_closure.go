@@ -40,22 +40,24 @@ func Golden(n int) float64 {
 }
 
 func main() {
-	f := fibonacci()
-	for i := 0; i < 10; i++ {
-		fmt.Println(f())
-	}
+	/*
+		f := fibonacci()
+		for i := 0; i < 10; i++ {
+			fmt.Println(f())
+		}
 
-	//
-	for i := 0; i < 10; i++ {
-		fmt.Println(fibonacci01(i))
-	}
-
+		//
+		for i := 0; i < 10; i++ {
+			fmt.Println(fibonacci01(i))
+		}
+	*/
 	f0 := fibonacci02()
 	for i := 0; i < 10; i++ {
 		fmt.Println(f0(i))
 	}
-
-	for i := 0; i < 10; i++ {
-		fmt.Println(Golden(i))
-	}
+	/*
+		for i := 0; i < 10; i++ {
+			fmt.Println(Golden(i))
+		}
+	*/
 }
