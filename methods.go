@@ -16,7 +16,7 @@ type Vertex struct {
 // レシーバー引数を関数にとる (v Vertex)
  func キーワードとメソッドの間に自分の引数リストで表現できる
  vという名前のVertex型レシーバを持つ
- メソッドは、レシーバ引数を伴う関数、でしたね？
+ メソッドは、レシーバ引数を伴う関数
 */
 func (v Vertex) Abs() float64 {
 	return math.Sqrt(v.X*v.X + v.Y*v.Y)
