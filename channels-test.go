@@ -61,7 +61,7 @@ func fibonacci(n int, c chan int) {
 	}
 	close(c)     // 作ったチャンネルを閉じることができる
 	v, ok := <-c // これで確認することができる
-	fmt.Printf("(%v, %v)\n", v, ok
+	fmt.Printf("(%v, %v)\n", v, ok )
 }
 
 func range_and_close() {
